@@ -1,9 +1,39 @@
-<div class="pb-16 text-center ">
-   <div class="bg-gray-50"> <h1>Hello World !</h1></div>
 
-    <div class="text-xs font-bold uppercase text-gray-600 space-x-3">
-        <a class="hover:bg-gray-300 p-2 rounded" href="{{ cp_url }}">Control Panel</a>
-        <a class="hover:bg-gray-300 p-2 rounded" href="https://statamic.dev" target="_blank" rel="noopener noreferrer">Documentation</a>
-        <a class="hover:bg-gray-300 p-2 rounded" href="https://statamic.com/support" rel="noopener noreferrer">Get Support</a>
+<head>
+	<title>{{title}}</title>
+</head>
+<body>
+<header class="bg-yellow-400 w-auto">
+	<h1 class="text-center">Rettungsdienst Kreis Plön</h1>
+</header>
+<nav>
+	<ul class="flex">
+		<li class="flex-auto"><a href="#">Rettungswachen</a></li>
+		<li class="flex-auto"><a href="#">Kontakt</a></li>
+		<li class="flex-auto"><a href="#">Ausbildung</a></li>
+		<li class="flex-auto"><a href="#">Stellenangebote</a></li>
+	</ul>
+</nav>
+<main class="text-center">
+	<picture>
+		<img src="resources/img/Rettungswache.jpeg">
+	</picture>
+	{{content}}
+</main>
+
+<footer class="bg-yellow-400">
+	
+
+		<div class="text-xs font-bold uppercase text-gray-600 space-x-3">
+
+			<a href="#">Impressum</a></li>
+	        <a class="hover:bg-gray-300 p-2 rounded" href="{{ cp_url }}">Log in</a>
+   
     </div>
+
+
+</footer>
+
+</body>
+
 </div>
